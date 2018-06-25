@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Calvary Baptist</title>
+    <link rel="import" href="wc:lakefox">
+    <link rel="stylesheet" href="./css/fontawesome-all.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/cbc.png">
+    <link rel="stylesheet" href="/css/master.css">
+  </head>
+  <body>
+    <lakefox src="nav">
+      <args>
+        {
+          "logo": "./assets/cbc.png",
+          "links": [
+            {"name": "Home", "href": "/"},
+            {"name": "About", "href": "/about"},
+            {"name": "Contact Info", "href": "/contact"}
+          ],
+          "instagram": "https://instagram.com/masonwright40",
+          "twitter": "https://twitter.com/masonwright40",
+          "facebook": "https://www.facebook.com/Calvary-Baptist-Church-121217051222751/"
+        }
+      </args>
+    </lakefox>
+    <lakefox src="popup">
+      <args>
+        {
+          "title": "Subscribe To Our Newsletter",
+          "action": "https://submit-form.com/460e4f45-cabc-4392-b279-812313f94881",
+          "redirect": "http://localhost:8080",
+          "image": "./assets/popupbg.png"
+        }
+      </args>
+    </lakefox>
+    <br><br><br>
+    <lakefox src="floatingimage">
+      <args>
+        {
+          "url": "./assets/cbc.png",
+          "alt": ""
+        }
+      </args>
+    </lakefox>
+    <lakefox src="widegallery">
+      <args>
+        {
+          "title": "Calvary",
+          "color": "#fff",
+          "background": "#22313F",
+          "images":[
+            {
+              "url": "./assets/vision.png",
+              "alt": "Vision Series"
+            },
+            {
+              "url": "./assets/convictingthechurch.png",
+              "alt": "Convicting the Church Series"
+            }]
+        }
+      </args>
+    </lakefox>
+    <div class="cross-section">
+      <div class="bar">
+        -----
+      </div>
+      <div class="contents">
+        Make a Connection
+      </div>
+      <div class="bar">
+        -----
+      </div>
+    </div>
+    <div class="contact">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <a href="mailto:" target="_blank">Send An Email</a>
+    </div>
+    <br><br>
+    <script src="https://wcpm.lakefox.net/mustache.js" charset="utf-8"></script>
+    <script src="https://wcpm.lakefox.net/include.js" charset="utf-8"></script>
+    <script src="./js/index.js" charset="utf-8"></script>
+  </body>
+</html>

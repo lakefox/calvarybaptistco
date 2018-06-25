@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Song+Myung');
+.bar {
+	letter-spacing: -9px;
+	5: ;
+	font-size: 88px;
+}
+.cross-section {
+	text-align: center;
+	font-size: 30px;
+  color: #111;
+}
+.contact {
+	max-width: 388px;
+	width: 50%;
+	min-width: 204px;
+	margin: auto;
+	margin-bottom: 100px;
+}
+.contact input {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0px;
+	border: 2px solid;
+	width: 180px;
+	height: 25px;
+	font-size: 20px;
+  margin-top: 10px;
+}
+.contact input[type=email] {
+  float: right;
+}
+.contact a {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background: #000;
+	border: none;
+	color: #fff;
+	border-radius: 3px;
+	padding: 7px;
+	margin-top: 15px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+  font-family: 'Song Myung', serif;
+}
+
+@media screen and (max-width: 600px) {
+	.contact a {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		background: #000;
+		border: none;
+		color: #fff;
+		border-radius: 3px;
+		padding: 7px;
+		margin-top: 60px;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+	  font-family: 'Song Myung', serif;
+	}
+}
