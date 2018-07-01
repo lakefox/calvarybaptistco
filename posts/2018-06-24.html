@@ -1,0 +1,394 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<title>2018-06-24.md</title>
+<style type="text/css">
+.content {
+  padding: 86.45px 84px
+}
+</style>
+<style type="text/css">
+.content {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 700px; /* 700px is the width of the post in Medium */
+}
+
+/* hide TOC(table of contents). it's height is calculated from the original container */
+.content--buffer .table-of-contents {
+  height: 0;
+}
+
+.content > :first-child,
+.content > :first-child > * /* nested blocks */ {
+  margin-top: 0;
+}
+
+.content > :last-child,
+.content > :last-child > * /* nested blocks */ {
+  margin-bottom: 0;
+}
+
+.mermaid {
+  margin-bottom:  1.9rem;
+}
+
+.page-break {
+  page-break-before: always;
+}
+
+@media print {
+  /* fix | code blocks in PDF export are trimmed */
+  .content pre {
+    white-space: pre-wrap;
+  }
+}
+</style>
+<style type="text/css">
+
+
+
+/*
+ * Read-only
+ *
+ * To add a theme:
+ *   1. Add a .css file to the same folder.
+ *   2. Restart the app. */
+
+::selection {
+  background: hsl(210, 40%, 90%);
+}
+
+:root {
+  --line-height: 1.9rem;
+
+  background: #fff;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height:  1.9rem;
+}
+
+.content {
+  max-width: 626px;
+}
+
+/* Quotes
+   ---------------- */
+
+blockquote {
+  border-left: .2rem solid #ddd;
+  color: #999;
+  margin-left: 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+/* Headings
+   ---------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto";
+  font-weight: normal;
+  line-height: normal;
+  margin-bottom:  1.9rem;
+  margin-top: calc(1.5 *  1.9rem);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.4rem;
+}
+
+/* Paragraphs */
+
+p {
+  margin-bottom:  1.9rem;
+}
+
+/* Inlines
+   ---------------- */
+
+a[href] {
+  color: #79b;
+  text-decoration: none;
+}
+
+a[href] img {
+  /* hide link underline */
+  box-shadow: 0 10px 0 #fff;
+}
+
+kbd {
+  border: 2px solid #ddd;
+  border-bottom: 3px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Fira Mono', monospace;
+  font-size: 1rem;
+  margin: 0 .2rem;
+  padding: .2rem .6rem;
+}
+
+strong {
+  font-weight: 500;
+}
+
+/* Media
+   ---------------- */
+
+img {
+  max-width: 100%;
+}
+
+/* Rules
+   ---------------- */
+
+hr {
+  border: none;
+  border-top: .2rem solid #ddd;
+  box-sizing: border-box;
+  height: 0;
+  padding: 0;
+  margin-bottom:  1.9rem;
+}
+
+/* Tables
+   ---------------- */
+
+table {
+  border-collapse: collapse;
+  border-top: .3rem solid #ddd;
+  margin-bottom:  1.9rem;
+  width: 100%;
+}
+
+table td,
+table th {
+  padding: calc( 1.9rem / 4) .6rem;
+}
+
+table td:first-child,
+table th:first-child {
+  padding-left: 0;
+}
+
+table td:last-child,
+table th:last-child {
+  padding-right: 0;
+}
+
+table th {
+  font-weight: normal;
+  text-align: left;
+}
+
+table tbody tr:first-child {
+  border-top: .2rem solid #ddd;
+}
+
+table tbody tr:last-child {
+  border-bottom: .3rem solid #ddd;
+}
+
+/* Unordered Lists
+   ---------------- */
+
+ul {
+  list-style: disc;
+  padding-left: 2.4rem;
+  margin-bottom:  1.9rem;
+}
+
+/* Ordered Lists
+   ---------------- */
+
+ol {
+  padding-left: 2.4rem;
+  margin-bottom:  1.9rem;
+}
+
+ol ul,
+ol ol,
+ul ol,
+ul ul {
+  margin-bottom: 0;
+  padding-left: 2.4rem;
+}
+
+ol ol,
+ul ol {
+  list-style-type: lower-roman;
+}
+
+/* Tasks
+   ---------------- */
+
+.task-list-item {
+  list-style-type: none;
+}
+
+.task-list-item input {
+  font-size: 1rem;
+  margin: 0 0 0 -1.6rem;
+  vertical-align: middle;
+  width: 1.3rem;
+}
+
+.task-list-item p {
+  margin-bottom: calc(.5 *  1.9rem);
+}
+
+/* Math
+   ---------------- */
+
+.katex-display {
+  padding: 0.6em 0;
+  font-size: 1.2em;
+  overflow-x: auto;
+  border-radius: 4px;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.katex--error {
+  color: #777;
+}
+
+/* Code Blocks
+   ---------------- */
+
+code {
+  background: #f3f3f3;
+  border-radius: 2px;
+  color: #444;
+  font-family: 'Fira Mono', monospace;
+  font-size: .85em;
+  margin: 0 .2em;
+  padding: .1em .5em;
+}
+
+.content > pre {
+  background: #f3f3f3;
+  font-family: 'Fira Mono', monospace;
+  margin-bottom:  1.9rem;
+  padding: calc(.5 *  1.9rem) 1.2rem;
+  tab-size: 4;
+  overflow-x: auto;
+}
+
+.content > pre code {
+  background: none;
+  border: none;
+  color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+/* Code
+   ---------------- */
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #aaa;
+}
+
+.token.operator,
+.token.punctuation {
+  color: #888;
+}
+
+.token.selector,
+.token.attr-name,
+.token.entity,
+.token.url {
+  color: #987;
+}
+
+.token.tag,
+.token.constant,
+.token.keyword {
+  color: #a7a;
+}
+
+.token.function,
+.token.attr-value {
+  color: #68a;
+}
+
+.token.number,
+.token.boolean,
+.token.regex,
+.token.string {
+  color: #6a8;
+}
+
+.token.variable,
+.token.property,
+.token.key {
+  color: #a66;
+}
+
+/* Print
+   ---------------- */
+
+@media print {
+  :root {
+    font-size: 14px !important;
+  }
+}
+
+</style>
+</head>
+<body>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+  body {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+  }
+</style>
+<p><br><br><br>
+<img src="http://calvarybaptist.co/assets/convictingthechurch.png" alt=""></p>
+<h1 id="convicting-the-church">Convicting the church</h1>
+<p>Seconded Timothy 3 talks about "Difficult Times Will Come", it goes on about all the sins we will commit against god. If you look at verse four it says <em>" treacherous, rash, conceited, lovers of pleasure rather than lovers of God"</em></p>
+<p>The key part of that is</p>
+<blockquote>
+<p>"lovers of pleasure rather than lovers of God"</p>
+</blockquote>
+<p>Which that does a pretty good job of describing the situation we are in. We have became a stagnate church. We say we follow the bible, but the reality is we don't. The bible says in Matthew 28:19-20</p>
+<blockquote>
+<p>Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all things I have commanded you. And remember, I am with you always, even to the end of the age.” Amen</p>
+</blockquote>
+<p><em>but you know that</em>, how come we aren't do it? Your probably saying to yourself right now, "What do you mean I have made disciples?", which you probably have. The key word of that is <em>have</em>, Jesus and his disciples while they were together never stopped. However we stop, why because we get comfortable and get into a routine then stay there. We stop making disciples and that's the problem with getting comfortable in our faith.</p>
+<p>Luckily we aren't alone in not wanting to be uncomfortable, in the story of the women at the well, Jesus is at the well and the disciples are in town away from him. Then a woman, more importantly a Samaritan woman, go to the same well to draw water. Now in that day a Hebrew man wouldn't talk to a woman in public and Jews didn't mess with the Samaritans. So basically Jesus is at this well breaking every rule in the social customs rule book. Now Jesus asks this woman if she will get him something to drink because he doesn't a cup to get the water (just a note the well was around 80 feet deep). This catches her off guard because it was breaking those rules and she makes sure to point that out to him (obviously he knew that). Then he pulls out his evangelism training 101 and starts to minster to her. So they are talking about the endless drink of water then the disciples show back up, they didn't say anything to Jesus but they freaking out on the inside because of those rules.</p>
+<p>This is an example of Jesus making the disciples uncomfortable, if you read on in John 4, which is where that's from, you see miracles happen because of the uncomfortable situation. How come you aren't talking to your non-believing friends? Which is the most uncomfortable thing you can do. It's because you are a (and I quote) "lover of pleasure rather than lover of God". We are the people who were written about in 2nd Timothy 3. Do you not love your friends more than Jesus loved the Samaritan woman? Now You are thinking, "Well all my friends are Christians so I'm off the hook", right? I guarantee that not <em>all</em> your friends are but if they are, which is great by the way, it's time you make some new friends. Jesus was the perfect example of this he had twelve best friends that followed him around all the time. All of them knew about him so what did he do? He found new people to tell about the good news.</p>
+<p>That's great right? Now how do we apply it to our lives?</p>
+<p><br><br><br></p>
+<div style="margin: auto; width: 200px;">
+  <img src="http://calvarybaptist.co/assets/cbc.png">
+</div>
+<br><br><br>
+</body>
+</html>

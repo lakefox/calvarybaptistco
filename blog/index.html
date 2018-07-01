@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Calvary Blog</title>
+    <link rel="import" href="wc:lakefox">
+    <link rel="stylesheet" href="/css/fontawesome-all.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/cbc.png">
+    <link rel="stylesheet" href="./css/master.css">
+    <meta property="og:title" content="Calvary Blog">
+    <meta property="og:image" content="/assets/convictingthechurch.png">
+  </head>
+  <body>
+    <lakefox src="nav">
+      <args>
+        {
+          "logo": "/assets/cbc.png",
+          "links": [
+            {"name": "Home", "href": "/"},
+            {"name": "Events", "href": "/events"},
+            {"name": "Blog", "href": "/blog"}
+          ],
+          "instagram": "https://instagram.com/masonwright40",
+          "twitter": "https://twitter.com/masonwright40",
+          "facebook": "https://www.facebook.com/Calvary-Baptist-Church-121217051222751/"
+        }
+      </args>
+    </lakefox>
+    <br>
+    <div class="title">
+      Blog Posts:
+    </div>
+    <br><br>
+    <!-- NOTE: Posts ########################################################### -->
+    <lakefox src="blog">
+      <args>
+        {
+          "posts": [
+            {
+              "link": "/posts/2018-06-24.html",
+              "title": "Convicting The Church",
+              "preview": "Seconded Timothy 3 talks about \"Difficult Times Will...",
+              "image": "/assets/convictingthechurch.png"
+            },
+            {
+              "link": "",
+              "title": "Vision: Making Disciples",
+              "preview": "Comming Soon!",
+              "image": "/assets/vision.png"
+            }
+          ]
+        }
+      </args>
+    </lakefox>
+    <!-- NOTE: Posts ########################################################### -->
+
+    <br><br><br>
+    <script src="https://wcpm.lakefox.net/mustache.js" charset="utf-8"></script>
+    <script src="https://wcpm.lakefox.net/include.js" charset="utf-8"></script>
+  </body>
+</html>
